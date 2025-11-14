@@ -12,6 +12,8 @@ import Instructors from './components/Instructors';
 import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
 import Courses from './pages/Courses';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsAndConditions />} />
           </Routes>
         </main>
         <Footer />
