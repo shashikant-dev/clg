@@ -33,11 +33,13 @@ const Header = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`font-poppins text-lg tracking-widest-xl relative transition-opacity duration-300 ${index > 0 ? 'opacity-50 hover:opacity-100' : 'opacity-100'}`}
+                className={`font-poppins text-lg tracking-widest-xl relative transition-all duration-300 group ${index > 0 ? 'opacity-50 hover:opacity-100' : 'opacity-100'}`}
               >
                 {link.name}
-                {index === 0 && (
+                {index === 0 ? (
                   <span className="absolute bottom-[-8px] left-0 w-full h-0.5 bg-brand-red"></span>
+                ) : (
+                  <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-brand-red transition-all duration-300 group-hover:w-full"></span>
                 )}
               </Link>
             ))}

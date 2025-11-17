@@ -9,7 +9,7 @@ const ContactUs: React.FC = () => {
         {/* Left Image */}
         <div className="w-full h-80 lg:h-auto">
           <img
-            src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80"
+            src="/college-image.png"
             alt="Leaf background"
             className="w-full h-full object-cover rounded-md"
           />
